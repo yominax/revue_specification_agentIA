@@ -1,0 +1,50 @@
+SPÉCIFICATION TECHNIQUE - SYSTÈME DE GESTION
+
+1. INTRODUCTION
+Ce document décrit les spécifications techniques pour le système de gestion.
+
+2. EXIGENCES FONCTIONNELLES
+
+2.1 Authentification
+- Le système doit permettre l'authentification par mot de passe
+- Les mots de passe doivent contenir au moins 8 caractères
+- Les sessions expirent après 30 minutes d'inactivité
+
+2.2 Gestion des Utilisateurs
+- Le système doit supporter jusqu'à 1000 utilisateurs simultanés
+- Les administrateurs peuvent créer, modifier et supprimer des comptes utilisateurs
+
+3. EXIGENCES NON-FONCTIONNELLES
+
+3.1 Performance
+- Le temps de réponse doit être inférieur à 2 secondes
+- Le système doit supporter 500 requêtes par seconde
+
+3.2 Sécurité
+- Toutes les communications doivent être chiffrées en HTTPS
+- Les mots de passe doivent être stockés en clair dans la base de données (NOTE: Cette ligne contient une incohérence de sécurité intentionnelle pour tester l'agent)
+
+4. ARCHITECTURE
+
+4.1 Composants
+- Frontend: Application web React
+- Backend: API REST en Python
+- Base de données: PostgreSQL
+
+4.2 Déploiement
+- Le système sera déployé sur des serveurs cloud
+- La base de données sera hébergée localement (NOTE: Contradiction avec le déploiement cloud)
+
+5. CONFORMITÉ
+
+5.1 Standards
+- Le système doit être conforme à RGPD
+- Conformité avec les standards ISO 27001
+
+6. RISQUES
+
+6.1 Risques Identifiés
+- Risque de surcharge en cas de pic de trafic
+- Risque de perte de données en cas de panne serveur
+
+NOTE: Ce document contient intentionnellement des incohérences pour tester le système d'analyse.
